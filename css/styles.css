@@ -96,9 +96,20 @@ ul {
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: center;
-  border: solid 2px grey;
+  border: solid 3px #60fbbf;
   border-radius: 5px;
   padding-bottom: 1rem;
+  transition: all 0.5s ease;
+}
+
+.container:hover {
+  cursor: pointer;
+  transform: translateX(-10px);
+  filter:grayscale();
+}
+
+.imagen {
+  margin-bottom: 1rem;
 }
 
 .text {
