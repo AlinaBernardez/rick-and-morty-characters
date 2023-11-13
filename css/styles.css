@@ -25,6 +25,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 ol, ul {
 	list-style: none;
@@ -66,15 +67,43 @@ table {
   font-size: 16px;
   padding: 10px;
   border: none;
-  border-radius: 15px;
+  border-radius: 10px;
   color: white;
   cursor: pointer;
   background-color: #03b1c8;
+  transition: all 0.5s ease;
+}
+
+.boton:hover {
+  border-radius: 30px;
+  transition: all 0.5s ease;
 }
 
 ul {  
-  padding-top: 100px;
+  padding: 100px 50px;
   list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  border: solid 2px grey;
+  border-radius: 5px;
+  padding-bottom: 1rem;
+}
+
+.text {
+  margin-left: 1rem;
+  margin-top: 0.5rem;
 }
 
 
