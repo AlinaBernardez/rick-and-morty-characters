@@ -24,11 +24,11 @@ async function getData(url) {
 
     dataArray.forEach(item => {
         let result = `
-        <div class='container'>
-            <li class='imagen'><img src='${item.image}'/></li>
-            <li class='text'>Name: ${item.name}</li>
-            <li class='text'>Species: ${item.species}</li>
-        </div>
+        <li class='container'>
+            <img class='imagen' src='${item.image}' alt='${item.name}'/>
+            <p class='text'>Name: ${item.name}</p>
+            <p class='text'>Species: ${item.species}</p>
+        </li>
             `;
         lista.innerHTML += result;
     });
